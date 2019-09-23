@@ -10,6 +10,7 @@
         android:targetSdkVersion="28" />
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:name="com.emircan.siparis.OrderApplication"
@@ -24,7 +25,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
         <activity android:name="com.emircan.siparis.order.OrderActivity" />
-        <activity android:name="com.emircan.siparis.main.MainActivity" >
+        <activity android:name="com.emircan.siparis.main.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

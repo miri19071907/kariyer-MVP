@@ -2,6 +2,7 @@ package com.emircan.siparis.order
 
 import com.emircan.siparis.network.NetworkManager
 import com.emircan.siparis.model.Order
+import com.emircan.siparis.utils.LoginManager
 import com.emircan.siparis.utils.SharedPref
 import com.emircan.siparis.utils.SharedPref.REMEMBER_ME
 import retrofit2.Call
@@ -10,7 +11,7 @@ import retrofit2.Response
 
 class OrderPresenter(val view: OrderContract.View) : OrderContract.Presenter {
     override fun logOut() {
-        SharedPref.saveBoolean(REMEMBER_ME, false)
+        LoginManager.logOut()
         view.onLogOut()
     }
 

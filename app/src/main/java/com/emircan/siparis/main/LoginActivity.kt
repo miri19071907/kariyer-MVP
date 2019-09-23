@@ -1,14 +1,17 @@
 package com.emircan.siparis.main
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.emircan.siparis.R
+import com.emircan.siparis.base.BaseActivity
 import com.emircan.siparis.order.OrderActivity
 import com.emircan.siparis.utils.openActivity
 import com.emircan.siparis.utils.showToast
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_login.*
 
-class LoginActivity : AppCompatActivity(), MainContract.View {
+class LoginActivity : BaseActivity(), LoginContract.View {
+
+    override fun getLayoutId(): Int = R.layout.activity_login
+
     override fun successfulLogin() {
         finish()
         openActivity(OrderActivity::class.java)
@@ -28,9 +31,12 @@ class LoginActivity : AppCompatActivity(), MainContract.View {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        val presenter = MainPresenter(this)
 
+        val presenter = LoginPresenter(this)
+
+        presenter.loginControl()
+        presenter.loginControl()
+        presenter.loginControl()
         presenter.loginControl()
 
         cvLogin.setOnClickListener {

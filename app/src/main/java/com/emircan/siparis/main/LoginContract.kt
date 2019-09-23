@@ -1,6 +1,6 @@
 package com.emircan.siparis.main
 
-interface MainContract {
+interface LoginContract {
     interface View {
         fun onEmptyPassword()
         fun onEmptyUsername()

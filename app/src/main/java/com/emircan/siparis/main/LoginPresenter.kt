@@ -1,9 +1,9 @@
 package com.emircan.siparis.main
 
+import com.emircan.siparis.utils.LoginManager
 import com.emircan.siparis.utils.SharedPref
 
-class MainPresenter(private val view: MainContract.View) :
-    MainContract.Presenter {
+class LoginPresenter(private val view: LoginContract.View) : LoginContract.Presenter {
     override fun loginControl() {
         if (SharedPref.getBoolean(SharedPref.REMEMBER_ME)) {
             view.successfulLogin()
@@ -23,9 +23,8 @@ class MainPresenter(private val view: MainContract.View) :
             view.onWrongUsernameOrPassword()
             return
         }
-        SharedPref.saveBoolean(SharedPref.REMEMBER_ME, rememberMe)
+        LoginManager.login(rememberMe)
         view.successfulLogin()
-
     }
 
 

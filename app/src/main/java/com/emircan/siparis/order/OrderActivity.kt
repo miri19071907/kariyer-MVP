@@ -37,7 +37,7 @@ class OrderActivity : AppCompatActivity(), OrderContract.View {
 
         orderPresenter.requestOrder()
 
-        btnLogOut.setOnClickListener {
+        cvLogOut.setOnClickListener {
             orderPresenter.logOut()
         }
     }

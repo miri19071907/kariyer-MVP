@@ -16,4 +16,13 @@
         <item name="android:layout_marginEnd">10dp</item>
     </style>
 
+    <style name="CardViewButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="cardBackgroundColor">@color/colorPrimary</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="contentPadding">10dp</item>
+    </style>
+
 </resources>

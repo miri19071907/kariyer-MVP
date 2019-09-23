@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,13 +10,24 @@
         android:id="@+id/rvOrders"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/btnLogOut" />
+        android:layout_above="@id/cvLogOut" />
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvLogOut"
+        style="@style/CardViewButtonStyle"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true">
 
-    <Button
-        android:id="@+id/btnLogOut"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:text="@string/logout" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/logout"
+            android:textColor="@color/white"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
 </RelativeLayout>

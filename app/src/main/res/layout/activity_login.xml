@@ -34,7 +34,7 @@
 
         <EditText
             android:id="@+id/etUsername"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
             android:ellipsize="end"
@@ -55,11 +55,11 @@
 
         <ImageView
             style="@style/LoginActivityIconStyle"
-            android:src="@drawable/ic_user" />
+            android:src="@drawable/ic_lock" />
 
         <EditText
             android:id="@+id/etPassword"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
             android:ellipsize="end"
@@ -94,13 +94,8 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cvLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        app:cardBackgroundColor="@color/colorPrimary"
-        app:cardCornerRadius="8dp"
-        app:cardUseCompatPadding="true"
-        app:contentPadding="10dp">
+        style="@style/CardViewButtonStyle"
+        android:layout_marginTop="30dp">
 
         <TextView
             android:layout_width="match_parent"

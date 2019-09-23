@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.emircan.siparis.R
 import com.emircan.siparis.model.Order
+import com.emircan.siparis.utils.Utils
 import kotlinx.android.synthetic.main.item_order.view.*
 import kotlinx.android.synthetic.main.item_product_detail.view.*
 
@@ -26,12 +27,13 @@ class OrderAdapter(private val context: Context, private val orderList: MutableL
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val order = orderList[position]
+        val colorId = stateColor(order.productState)
         holder.itemView.apply {
             tvMarketName.text = order.marketName
             tvDay.text = order.date
             tvPrice.text = order.productPrice
             tvOrderName.text = order.orderName
-            tvMonth.text = order.month
+            tvMonth.text = Utils.decimalToMonthName(order.month)
             containerProductDetail.apply {
                 visibility = if (order.showDetail) VISIBLE else GONE
                 tvProductName.text = order.productDetail.orderDetail
@@ -39,19 +41,22 @@ class OrderAdapter(private val context: Context, private val orderList: MutableL
             }
             tvProductState.apply {
                 text = order.productState
-                setTextColor(
-                    when (order.productState) {
-                        "Hazırlanıyor" -> Color.MAGENTA
-                        "Yolda" -> Color.RED
-                        "Onay Bekliyor" -> Color.GREEN
-                        else -> Color.BLACK
-                    }
-                )
+                setTextColor(colorId)
             }
+            ivState.setBackgroundColor(colorId)
         }
         holder.itemView.setOnClickListener {
             order.showDetail = !order.showDetail
             notifyItemChanged(position)
+        }
+    }
+
+    private fun stateColor(productState: String): Int {
+        return when (productState) {
+            "Hazırlanıyor" -> Color.MAGENTA
+            "Yolda" -> Color.RED
+            "Onay Bekliyor" -> Color.GREEN
+            else -> Color.BLACK
         }
     }
 
