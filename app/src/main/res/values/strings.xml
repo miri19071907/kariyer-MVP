@@ -1,12 +1,22 @@
 <resources>
     <string name="app_name">MARKETİM</string>
+    <string name="language">tr</string>
+
+    <!--LoginActivity.kt-->
     <string name="remember_me">Beni Hatırla</string>
     <string name="blank_username">Kullanıcı adı boş bırakılamaz</string>
     <string name="blank_password">Şifre boş bırakılamaz</string>
     <string name="wrong_password_or_username">Kullanıcı adı veya şifre hatalı</string>
+
+    <!--activity_login.xml-->
     <string name="login">Giriş Yap</string>
-    <string name="logout">Çıkış Yap</string>
     <string name="username">Kullanıcı Adı</string>
     <string name="password">Şifre</string>
-    <string name="language">tr</string>
+
+    <!--dialog_logout.xml-->
+    <string name="logout_title">Çıkış Yap</string>
+    <string name="logout_description">Çıkış yapmak istiyor musunuz?</string>
+    <string name="logout">Çıkış Yap</string>
+    <string name="cancel">İptal</string>
+
 </resources>

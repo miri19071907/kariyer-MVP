@@ -18,7 +18,7 @@
 12-->C:\Users\Emircan\AndroidStudioProjects\Kariyer\app\src\main\AndroidManifest.xml:6:22-76
 13
 14    <application
-14-->C:\Users\Emircan\AndroidStudioProjects\Kariyer\app\src\main\AndroidManifest.xml:8:5-25:19
+14-->C:\Users\Emircan\AndroidStudioProjects\Kariyer\app\src\main\AndroidManifest.xml:8:5-29:19
 15        android:name="com.emircan.siparis.OrderApplication"
 15-->C:\Users\Emircan\AndroidStudioProjects\Kariyer\app\src\main\AndroidManifest.xml:9:9-41
 16        android:allowBackup="true"
@@ -39,23 +39,29 @@
 24-->C:\Users\Emircan\AndroidStudioProjects\Kariyer\app\src\main\AndroidManifest.xml:15:9-40
 25        android:usesCleartextTraffic="true" >
 25-->C:\Users\Emircan\AndroidStudioProjects\Kariyer\app\src\main\AndroidManifest.xml:16:9-44
-26        <activity android:name="com.emircan.siparis.order.OrderActivity" />
-26-->C:\Users\Emircan\AndroidStudioProjects\Kariyer\app\src\main\AndroidManifest.xml:17:9-66
-26-->C:\Users\Emircan\AndroidStudioProjects\Kariyer\app\src\main\AndroidManifest.xml:17:19-54
-27        <activity android:name="com.emircan.siparis.main.LoginActivity" >
-27-->C:\Users\Emircan\AndroidStudioProjects\Kariyer\app\src\main\AndroidManifest.xml:18:9-24:20
-27-->C:\Users\Emircan\AndroidStudioProjects\Kariyer\app\src\main\AndroidManifest.xml:18:19-53
-28            <intent-filter>
-28-->C:\Users\Emircan\AndroidStudioProjects\Kariyer\app\src\main\AndroidManifest.xml:19:13-23:29
-29                <action android:name="android.intent.action.MAIN" />
-29-->C:\Users\Emircan\AndroidStudioProjects\Kariyer\app\src\main\AndroidManifest.xml:20:17-69
-29-->C:\Users\Emircan\AndroidStudioProjects\Kariyer\app\src\main\AndroidManifest.xml:20:25-66
-30
-31                <category android:name="android.intent.category.LAUNCHER" />
-31-->C:\Users\Emircan\AndroidStudioProjects\Kariyer\app\src\main\AndroidManifest.xml:22:17-77
-31-->C:\Users\Emircan\AndroidStudioProjects\Kariyer\app\src\main\AndroidManifest.xml:22:27-74
-32            </intent-filter>
-33        </activity>
-34    </application>
-35
-36</manifest>
+26        <activity
+26-->C:\Users\Emircan\AndroidStudioProjects\Kariyer\app\src\main\AndroidManifest.xml:17:9-19:62
+27            android:name="com.emircan.siparis.order.OrderActivity"
+27-->C:\Users\Emircan\AndroidStudioProjects\Kariyer\app\src\main\AndroidManifest.xml:18:13-48
+28            android:configChanges="orientation|screenSize" />
+28-->C:\Users\Emircan\AndroidStudioProjects\Kariyer\app\src\main\AndroidManifest.xml:19:13-59
+29        <activity
+29-->C:\Users\Emircan\AndroidStudioProjects\Kariyer\app\src\main\AndroidManifest.xml:20:9-28:20
+30            android:name="com.emircan.siparis.main.LoginActivity"
+30-->C:\Users\Emircan\AndroidStudioProjects\Kariyer\app\src\main\AndroidManifest.xml:21:13-47
+31            android:configChanges="orientation|screenSize" >
+31-->C:\Users\Emircan\AndroidStudioProjects\Kariyer\app\src\main\AndroidManifest.xml:22:13-59
+32            <intent-filter>
+32-->C:\Users\Emircan\AndroidStudioProjects\Kariyer\app\src\main\AndroidManifest.xml:23:13-27:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->C:\Users\Emircan\AndroidStudioProjects\Kariyer\app\src\main\AndroidManifest.xml:24:17-69
+33-->C:\Users\Emircan\AndroidStudioProjects\Kariyer\app\src\main\AndroidManifest.xml:24:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->C:\Users\Emircan\AndroidStudioProjects\Kariyer\app\src\main\AndroidManifest.xml:26:17-77
+35-->C:\Users\Emircan\AndroidStudioProjects\Kariyer\app\src\main\AndroidManifest.xml:26:27-74
+36            </intent-filter>
+37        </activity>
+38    </application>
+39
+40</manifest>

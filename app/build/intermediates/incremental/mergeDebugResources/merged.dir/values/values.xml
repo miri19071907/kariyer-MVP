@@ -602,6 +602,7 @@
     <string name="blank_password">Şifre boş bırakılamaz</string>
     <string name="blank_username">Kullanıcı adı boş bırakılamaz</string>
     <string name="bottom_sheet_behavior" translatable="false">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
+    <string name="cancel">İptal</string>
     <string name="character_counter_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="fab_transformation_scrim_behavior" translatable="false">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
@@ -610,6 +611,8 @@
     <string name="language">tr</string>
     <string name="login">Giriş Yap</string>
     <string name="logout">Çıkış Yap</string>
+    <string name="logout_description">Çıkış yapmak istiyor musunuz?</string>
+    <string name="logout_title">Çıkış Yap</string>
     <string name="mtrl_chip_close_icon_content_description">Remove %1$s</string>
     <string name="password">Şifre</string>
     <string name="password_toggle_content_description">Show password</string>
@@ -632,7 +635,7 @@
     <item name="android:windowExitAnimation">@anim/design_bottom_sheet_slide_out</item>
   </style>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+        
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
@@ -2074,6 +2077,14 @@
         <item name="cardCornerRadius">8dp</item>
         <item name="cardUseCompatPadding">true</item>
         <item name="contentPadding">10dp</item>
+    </style>
+    <style name="CardViewTextButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textStyle">bold</item>
     </style>
     <style name="LoginActivityIconStyle">
         <item name="android:layout_width">@dimen/login_activity_icon_size</item>

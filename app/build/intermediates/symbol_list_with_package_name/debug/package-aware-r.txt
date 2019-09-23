@@ -1156,8 +1156,10 @@ id contentPanel
 id coordinator
 id custom
 id customPanel
+id cvCancel
 id cvLogOut
 id cvLogin
+id cvLogout
 id decor_content_parent
 id default_activity_button
 id design_bottom_sheet
@@ -1399,6 +1401,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout dialog_logout
 layout item_order
 layout item_product_detail
 layout mtrl_layout_snackbar
@@ -1447,6 +1450,7 @@ string appbar_scrolling_view_behavior
 string blank_password
 string blank_username
 string bottom_sheet_behavior
+string cancel
 string character_counter_content_description
 string character_counter_pattern
 string fab_transformation_scrim_behavior
@@ -1455,6 +1459,8 @@ string hide_bottom_view_on_scroll_behavior
 string language
 string login
 string logout
+string logout_description
+string logout_title
 string mtrl_chip_close_icon_content_description
 string password
 string password_toggle_content_description
@@ -1667,6 +1673,7 @@ style CardView
 style CardView_Dark
 style CardView_Light
 style CardViewButtonStyle
+style CardViewTextButtonStyle
 style LoginActivityIconStyle
 style Platform_AppCompat
 style Platform_AppCompat_Light

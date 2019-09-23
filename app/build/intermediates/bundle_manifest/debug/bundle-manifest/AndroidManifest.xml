@@ -23,8 +23,12 @@
         android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
-        <activity android:name="com.emircan.siparis.order.OrderActivity" />
-        <activity android:name="com.emircan.siparis.main.LoginActivity" >
+        <activity
+            android:name="com.emircan.siparis.order.OrderActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.emircan.siparis.main.LoginActivity"
+            android:configChanges="orientation|screenSize" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

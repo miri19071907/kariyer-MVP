@@ -10,10 +10,6 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class OrderPresenter(val view: OrderContract.View) : OrderContract.Presenter {
-    override fun logOut() {
-        LoginManager.logOut()
-        view.onLogOut()
-    }
 
     override fun requestOrder() {
         NetworkManager.getOrderApi().getOrderList().enqueue(object : Callback<MutableList<Order>> {

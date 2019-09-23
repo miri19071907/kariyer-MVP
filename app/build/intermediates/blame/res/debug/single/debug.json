@@ -88,6 +88,10 @@
         "source": "C:\\Users\\Emircan\\AndroidStudioProjects\\Kariyer\\app\\src\\main\\res\\drawable\\rounded_login_et_bg.xml"
     },
     {
+        "merged": "C:\\Users\\Emircan\\AndroidStudioProjects\\Kariyer\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_logout.xml.flat",
+        "source": "C:\\Users\\Emircan\\AndroidStudioProjects\\Kariyer\\app\\src\\main\\res\\layout\\dialog_logout.xml"
+    },
+    {
         "merged": "C:\\Users\\Emircan\\AndroidStudioProjects\\Kariyer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\Emircan\\AndroidStudioProjects\\Kariyer\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },

@@ -15,19 +15,14 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cvLogOut"
         style="@style/CardViewButtonStyle"
-        android:layout_marginEnd="20dp"
+        android:layout_alignParentBottom="true"
         android:layout_marginStart="20dp"
-        android:layout_marginBottom="10dp"
-        android:layout_alignParentBottom="true">
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="@string/logout"
-            android:textColor="@color/white"
-            android:textSize="21sp"
-            android:textStyle="bold" />
+            style="@style/CardViewTextButtonStyle"
+            android:text="@string/logout" />
 
     </androidx.cardview.widget.CardView>
 </RelativeLayout>

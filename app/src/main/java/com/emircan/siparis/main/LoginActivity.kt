@@ -35,9 +35,6 @@ class LoginActivity : BaseActivity(), LoginContract.View {
         val presenter = LoginPresenter(this)
 
         presenter.loginControl()
-        presenter.loginControl()
-        presenter.loginControl()
-        presenter.loginControl()
 
         cvLogin.setOnClickListener {
             presenter.loginButtonClicked(

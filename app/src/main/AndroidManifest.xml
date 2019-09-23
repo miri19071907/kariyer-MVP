@@ -14,8 +14,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".order.OrderActivity"></activity>
-        <activity android:name=".main.LoginActivity">
+        <activity
+            android:name=".order.OrderActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".main.LoginActivity"
+            android:configChanges="orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

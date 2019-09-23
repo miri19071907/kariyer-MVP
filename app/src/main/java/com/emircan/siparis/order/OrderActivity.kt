@@ -4,19 +4,18 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.emircan.siparis.R
+import com.emircan.siparis.base.BaseActivity
 import com.emircan.siparis.main.LoginActivity
 import com.emircan.siparis.model.Order
+import com.emircan.siparis.utils.Utils
 import com.emircan.siparis.utils.openActivity
 import com.emircan.siparis.utils.showToast
 import kotlinx.android.synthetic.main.activity_order.*
 
-class OrderActivity : AppCompatActivity(), OrderContract.View {
-    private lateinit var orderPresenter : OrderPresenter
+class OrderActivity : BaseActivity(), OrderContract.View {
+    override fun getLayoutId(): Int = R.layout.activity_order
 
-    override fun onLogOut() {
-        openActivity(LoginActivity::class.java)
-        finish()
-    }
+    private lateinit var orderPresenter : OrderPresenter
 
     override fun onOrderSuccess(orderList: MutableList<Order>) {
         val orderAdapter = OrderAdapter(this, orderList)
@@ -32,13 +31,12 @@ class OrderActivity : AppCompatActivity(), OrderContract.View {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_order)
         orderPresenter = OrderPresenter(this)
 
         orderPresenter.requestOrder()
 
         cvLogOut.setOnClickListener {
-            orderPresenter.logOut()
+            Utils.showLogoutDialog(this@OrderActivity)
         }
     }
 }

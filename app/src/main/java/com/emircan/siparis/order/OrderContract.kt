@@ -7,11 +7,9 @@ interface OrderContract {
     interface View {
         fun onOrderSuccess(orderList: MutableList<Order>)
         fun onOrderError(errorMessage: String)
-        fun onLogOut()
     }
 
     interface Presenter {
         fun requestOrder()
-        fun logOut()
     }
 }
