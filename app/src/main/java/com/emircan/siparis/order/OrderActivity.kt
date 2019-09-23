@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.emircan.siparis.R
-import com.emircan.siparis.main.MainActivity
+import com.emircan.siparis.main.LoginActivity
 import com.emircan.siparis.model.Order
 import com.emircan.siparis.utils.openActivity
 import com.emircan.siparis.utils.showToast
@@ -14,7 +14,7 @@ class OrderActivity : AppCompatActivity(), OrderContract.View {
     private lateinit var orderPresenter : OrderPresenter
 
     override fun onLogOut() {
-        openActivity(MainActivity::class.java)
+        openActivity(LoginActivity::class.java)
         finish()
     }
 

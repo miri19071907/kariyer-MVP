@@ -1,9 +1,11 @@
 <resources>
-    <string name="app_name">Kariyer</string>
+    <string name="app_name">MARKETİM</string>
     <string name="remember_me">Beni Hatırla</string>
     <string name="blank_username">Kullanıcı adı boş bırakılamaz</string>
     <string name="blank_password">Şifre boş bırakılamaz</string>
     <string name="wrong_password_or_username">Kullanıcı adı veya şifre hatalı</string>
     <string name="login">Giriş Yap</string>
     <string name="logout">Çıkış Yap</string>
+    <string name="username">Kullanıcı Adı</string>
+    <string name="password">Şifre</string>
 </resources>

@@ -8,7 +8,7 @@ import com.emircan.siparis.utils.openActivity
 import com.emircan.siparis.utils.showToast
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity(), MainContract.View {
+class LoginActivity : AppCompatActivity(), MainContract.View {
     override fun successfulLogin() {
         finish()
         openActivity(OrderActivity::class.java)
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity(), MainContract.View {
 
         presenter.loginControl()
 
-        btnLogin.setOnClickListener {
+        cvLogin.setOnClickListener {
             presenter.loginButtonClicked(
                 etUsername.text.toString(),
                 etPassword.text.toString(),
